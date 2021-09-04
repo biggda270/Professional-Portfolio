@@ -1,11 +1,14 @@
 * {
-font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    
+    padding: 0;    
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 main, header, section, aside, footer {
     margin: 0;
     padding: 20px;
-    border: 1px solid #000000;
+    border: 1px solid #0111f8;
     color: #ffffff;
 }
 
@@ -14,9 +17,53 @@ main {
 }
 
 header {
-    background: #03a9f4;
+    display:flex;
+    background: #fd8904;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
 }
 
+header nav {
+    margin:7px 0
+}
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+    
+  }
+header h1 {
+font-weight: bold;
+  margin: 0;
+  font-size: 36px;
+  color: var(--primary-color);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+  
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.content-container {
+    display: flex;
+
+}
+
+article {
+    display: flex;
+}
 .hero {
     background: #d22b1f;
 }
@@ -26,7 +73,7 @@ header {
     
 }
 
-.sidebar {
+aside {
     border: 1px solid #000000;
     background: #673ab7;
 }
@@ -35,17 +82,32 @@ footer {
     background: #616161;
 }
 
-@media screen and (min-width: 640px) {
-    .flex-container{
-        display: flex;
-    }
-}
-.content {
-    flex: 1;
-    ...
+.about{
+    width: 100%;
+    padding: 50px;
+    margin: 10 0 10 0;
+    border:15px #0111f8;
+    background-color: #0111f8;
+    align-content: center;
+    border: 1px solid #fd8904;
+    color: #ffffff;
 }
 
-.sidebar {
-    flex: 0 1 300px;
-    ...
+.side {
+    box-sizing: border-box;
+}
+
+.hero-panels {
+box-sizing: border-box;
+width: 200px;
+height: auto;
+}
+
+.surf-pic {
+    max-width: 300px;
+    height: auto;
+}
+
+.panels {
+box-sizing: border-box;
 }
