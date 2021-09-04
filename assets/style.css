@@ -103,11 +103,17 @@ width: 200px;
 height: auto;
 }
 
-.surf-pic {
+.surfpic {
     max-width: 300px;
     height: auto;
 }
 
 .panels {
 box-sizing: border-box;
+}
+
+.project-pics {
+    max-width: 500px;
+    height: auto;
+
 }
