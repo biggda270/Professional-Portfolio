@@ -5,15 +5,20 @@
 }
 
 main, header, section, aside, footer {
-    margin: 0;
-    padding: 20px;
+    
     border: 1px solid #0111f8;
     color: #ffffff;
 }
 
-main {
-    background: #000000;
+.avatar {
+    border-radius: 50%;
+    width: 100px;
 }
+
+#portfolio {
+    text-align: center;
+}
+
 
 header {
     display:flex;
@@ -58,12 +63,14 @@ header nav ul li a {
 .content-container {
     display: flex;
     justify-content:space-around;
-    flex-wrap: wrap;
-    
+    flex-direction: row;
+  
 }
 
-article {
+#article {
     display: flex;
+    flex-wrap: wrap;
+    
 }
 .hero {
     background: #d22b1f;
@@ -76,7 +83,7 @@ article {
 
 aside {
     border: 1px solid #000000;
-    background: #673ab7;
+    background: #fd8904;
     position: sticky;
 }
 
@@ -92,9 +99,7 @@ aside {
     color: #ffffff;
 }
 
-.side {
-    box-sizing: border-box;
-}
+
 
 .hero-panels {
 box-sizing: border-box;
@@ -102,10 +107,7 @@ width: 200px;
 height: auto;
 }
 
-.surfpic {
-    max-width: auto;
-    height: 100%;
-}
+
 
 .panels {
 
@@ -119,6 +121,27 @@ height: 100px;
 flex-grow: 1;
 }
 
+#surf {
+    background-image: url(./Images/surf\ report.jpg);
+}
+
+#ledWall {
+    background-image: url(./Images/ledwall.jpeg);
+}
+
+#calculator {
+    background-image: url(./Images/calculator.jpg);
+}
+
+#pastelPuzzle {
+    background-image: url(./Images/pastelpuzzles.jpg);
+}
+
+#runBuddy {
+    background-image: url(./Images/Screenshot\ 2021-09-03\ 215924.jpg);
+    height: 100px;
+    width: auto;
+}
 .project-pics {
    width: auto;
     height: 100%;
@@ -127,5 +150,5 @@ flex-grow: 1;
 }
 footer {
     display: flex;
-    
+
 }
